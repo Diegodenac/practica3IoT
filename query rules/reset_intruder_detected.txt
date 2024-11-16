@@ -1,0 +1,1 @@
+SELECT 0 AS state.reported.intruderDetected FROM '$aws/things/intruder_alarm/shadow/update/documents' WHERE current.state.desired.alarmActive = 0 AND current.state.reported.intruderDetected = 1
